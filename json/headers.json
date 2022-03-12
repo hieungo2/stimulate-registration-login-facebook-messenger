@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "text": "Home",
+    "icon": "fas fa-home"
+  },
+  {
+    "id": 2,
+    "text": "Posts",
+    "icon": "fas fa-share-square"
+  },
+  {
+    "id": 3,
+    "text": "Contacts",
+    "icon": "fas fa-users"
+  },
+  {
+    "id": 4,
+    "text": "Settings",
+    "icon": "fas fa-settings"
+  }
+]

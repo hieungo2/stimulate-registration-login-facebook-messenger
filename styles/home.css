@@ -1,0 +1,466 @@
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    #messenger {
+        width: 100%;
+        display: flex;
+        position: fixed;
+        height: 100%;
+    }
+    
+    .chat {
+        flex: 25%;
+        border-right: 1px solid #e5e5e5;
+        padding: 1%;
+    }
+    
+    .friend {
+        flex: 55%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+    
+    .top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .top-left {
+        display: flex;
+    }
+    
+    .left-chat {
+        margin: auto;
+        font-weight: 700;
+    }
+    
+    .top-right {
+        display: flex;
+        flex-direction: row;
+        font-weight: 700;
+    }
+    
+    .more,
+    .call,
+    .new {
+        background-color: #e4e6eb;
+        font-size: 18px;
+        border-radius: 24px;
+        color: black;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        line-height: 36px;
+        margin-left: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    
+    .more:hover,
+    .call:hover,
+    .new:hover {
+        background-color: #ccc;
+        cursor: pointer;
+    }
+    
+    .icon-top {
+        border-radius: 24px;
+        font-size: 18px;
+        color: #a695c7;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        line-height: 36px;
+        margin: 8px 5px 0px;
+        cursor: pointer;
+    }
+    
+    .icon-top:hover {
+        background-color: rgba(240, 227, 227, 0.795);
+    }
+    
+    .chat-search {
+        margin-top: 14px;
+        margin-right: 8px;
+        position: relative;
+    }
+    
+    #chat-search-input {
+        width: 100%;
+        border-radius: 14px;
+        border: 0px;
+        background-color: #e4e6eb;
+        padding: 7px 32px;
+        margin-bottom: 20px;
+    }
+    
+    .chat-icon-search {
+        position: absolute;
+        position: absolute;
+        top: 6px;
+        left: 11px;
+        color: #8d9299;
+        font-size: 16px;
+    }
+    
+    .friend-chat {
+        display: flex;
+        margin-top: 6px;
+        padding-bottom: 6px;
+    }
+    
+    .friend-avatar {
+        background-color: black;
+        margin-top: 10px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        margin-left: 8px;
+    }
+    
+    .friend-exchange {
+        margin-left: 15px;
+        margin-top: 17px;
+    }
+    
+    .friend-name {
+        margin: 0px;
+        font-size: 16px;
+    }
+    
+    .friend-content-chat {
+        opacity: .7;
+    }
+    
+    .friend-chat:hover {
+        background-color: #b3b6b9;
+        border-radius: 10px;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+    
+    .friend-top {
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid #e5e5e5;
+        align-items: center;
+    }
+    
+    .friend-top-left {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+    
+    .friend-top-avatar {
+        margin-top: 0px;
+    }
+    
+    .friend-top-name {
+        margin-left: 15px;
+        margin-top: 8px;
+        font-weight: 700;
+    }
+    
+    .friend-top-right {
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    
+    .owner {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    
+    .owner-span {
+        background-color: #a695c7;
+        color: white;
+        padding: 1%;
+        border-radius: 19px;
+    }
+    
+    .other {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    
+    .other-span {
+        background-color: #e97c17;
+        color: white;
+        padding: 1%;
+        border-radius: 19px;
+    }
+    
+    .friend-mid {
+        padding: 1%;
+    }
+    /*----------------------thanh input co 4 icon---------------*/
+    
+    .friend-bot {
+        display: grid;
+        bottom: 8%;
+        grid-template-areas: "h1 h2 h3";
+        grid-template-columns: 5% 90% 5%;
+        padding: 1%;
+        height: 50px;
+        position: absolute;
+        width: 100%;
+        color: rgb(102, 110, 110);
+    }
+    
+    .friend-bot .fas:hover {
+        color: rgb(67, 64, 68);
+    }
+    
+    .bot__input--left {
+        grid-area: h1;
+        line-height: 45px;
+        cursor: pointer;
+    }
+    
+    .bot__input--center {
+        grid-area: h2;
+        display: grid;
+        grid-template-areas: "h1 h2";
+        grid-template-columns: 15% 84%;
+        line-height: 45px;
+    }
+    
+    .friend-bot .fas {
+        font-size: 20px;
+    }
+    
+    .bot__input--right {
+        grid-area: h3;
+        line-height: 45px;
+        cursor: pointer;
+    }
+    
+    .bot__text--input .form-control {
+        flex: 1;
+        margin-top: 3px;
+        background: #e0e3e7;
+    }
+    
+    .icon__bot--sub {
+        cursor: pointer;
+    }
+    
+    .icon__bot--sub .fa-sticky-note,
+    .icon__bot--sub .fa-gift {
+        padding-left: 10px;
+    }
+    
+    .bot__input--left {
+        margin-left: 5px;
+    }
+    
+    .bot__input--right {
+        margin-left: 8px;
+    }
+    /*------------right-friends---------*/
+    
+    .right__fen {
+        flex: 20%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: relative;
+        padding: 4px;
+    }
+    
+    .right__fen {
+        display: grid;
+        grid-template-areas: "h2" "h3";
+        grid-template-rows: 1fr 1fr;
+        border-left: 1px solid #ccc;
+    }
+    
+    .right__fen--requests {
+        grid-area: h2;
+        overflow-x: scroll;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .right__fen--online {
+        grid-area: h3;
+        overflow-x: scroll;
+    }
+    
+    #chat__right--search {
+        width: 100%;
+        border-radius: 14px;
+        border: 0px;
+        background-color: #e4e6eb;
+        padding: 7px 32px;
+    }
+    
+    .right__fen--search {
+        margin: 14px 5px 5px 0;
+        position: relative;
+    }
+    
+    .right__icon--search {
+        position: absolute;
+        top: 6px;
+        left: 11px;
+        color: #8d9299;
+        font-size: 16px;
+    }
+    /*---------------------------*/
+    
+    .avt--requests img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .avt--requests {
+        padding-top: 4px;
+    }
+    
+    .time__fen--requests {
+        color: #8d9299;
+        font-size: 12px;
+        padding-left: 6px;
+        min-width: 200px;
+    }
+    
+    .requests--infor {
+        min-width: 100px;
+    }
+    
+    .btn--delete {
+        background-color: rgba(204, 204, 204, 0.781);
+        color: black;
+        font-weight: 550;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .btn--accept {
+        font-weight: 550;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .name__fen--requests {
+        padding-left: 5px;
+        cursor: pointer;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    
+    .name__fen--requests:hover {
+        text-decoration: underline;
+    }
+    
+    .fen-request {
+        display: flex;
+        padding: 5px 0px 5px 5px;
+    }
+    
+    .fen-request:hover {
+        background-color: #e9edf1;
+        border-radius: 5px;
+    }
+    
+    .requests--btn .btn {
+        float: right;
+    }
+    
+    .btn--accept {
+        padding: 1px 5px 4px 6px;
+        height: 25px;
+        background: rgba(28, 91, 185, 0.849);
+        color: white;
+    }
+    
+    .btn--accept:focus,
+    .btn--accept:hover {
+        background-color: rgba(19, 67, 138, 0.849);
+        color: white;
+        font-weight: 550;
+    }
+    
+    .btn--delete {
+        padding: 1px 28px 4px 28px;
+        margin-top: 5px;
+        height: 25px;
+    }
+    
+    .btn--delete:hover {
+        background-color: #8d9299;
+        color: black;
+        font-weight: 550;
+    }
+    
+    .right__title__fen,
+    .right__title__online {
+        font-size: 16px;
+        padding-left: 10px;
+        font-weight: 550;
+    }
+    
+    .avt__fen--online img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    
+    .fen--online {
+        display: flex;
+        margin: 1px 0 1px 5px;
+        padding: 2px 5px 2px 5px;
+    }
+    
+    .fen--online:hover {
+        background: #ebe9f0;
+        padding: 2px 5px 2px 5px;
+        border-radius: 5px;
+    }
+    
+    .name__fen--on {
+        cursor: pointer;
+        font-weight: 600;
+        flex: 1;
+        margin: 5px 0 0 4px;
+    }
+    
+    .name__fen--on:hover {
+        text-decoration: underline;
+    }
+    
+    .dot-green {
+        background-color: green;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        float: right;
+        margin-top: 10px;
+    }
+    
+    #online__right--search {
+        border-radius: 14px;
+        border: 0px;
+        background-color: #e4e6eb;
+        padding: 7px 32px;
+        width: 260px;
+    }
+    
+    .time--online {
+        display: flex;
+        font-size: 12px;
+        color: rgb(158, 149, 149);
+        padding-right: 5px;
+        margin-top: 6px;
+    }

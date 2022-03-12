@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sub Chat</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/facebook-logo.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styles/font/fontawesome-free-5.15.3-web/css/all.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="../javascripts/moment.js"></script>
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container-fluid">
+        <div id="content"></div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>
+<script src="javascripts/user.js"></script>
+
+<script>
+    $(document).ready(function() {
+        var userId = localStorage.getItem("userId");
+        var file = $(location).attr("search").replace("?", "");
+        var activeIndex = 0;
+        switch (file) {
+            default:
+                if (userId == null) {
+                    file = "login-register";
+                } else {
+                    file = "home";
+                }
+        }
+        $("#content").load(`pages/${file}.html`);
+        if (userId !== null) {
+            document.getElementById("content").classList.add("content");
+            $("#header").load(`pages/shared/header.html`);
+            $("#footer").load(`pages/shared/footer.html`);
+        }
+    });
+</script>

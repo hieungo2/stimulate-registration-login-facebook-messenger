@@ -1,0 +1,54 @@
+<form>
+    <div class="security-header">Bảo mật và đăng nhập</div>
+    <div class="form-security">
+        <div class="form-content">
+            <label for="Mat khau hien tai">Mật khẩu hiện tại</label>
+            <input type="text" class="form-control" placeholder="Nhap mat khau hien tai">
+            <small id="passHelp">Không đúng mật khẩu.</small>
+        </div>
+        <div class="form-content">
+            <label for="Mat khau moi">Mật khẩu mới</label>
+            <input type="text" class="form-control" placeholder="Nhap mat khau moi">
+            <small id="passHelp">Lưu ý: Mật khẩu phải có ít nhất 8 kí tự, có số và chữ hoa.</small>
+        </div>
+        <div class="form-content">
+            <label for="Nhap lai mat khau moi">Nhập lại mật khẩu mới</label>
+            <input type="text" class="form-control" placeholder="Nhap lai mat khau moi">
+            <small id="passHelp">Mật khẩu không trùng.</small>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Lưu</button>
+</form>
+<style>
+    .security-header {
+        margin: 30px 0;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 30px 100px 30px 100px;
+    }
+    
+    .form-security {
+        margin: 0px 100px 0px 100px;
+    }
+    
+    .form-content {
+        padding: 20px 0px 10px 0px;
+    }
+    
+    .form-content:first-child {
+        padding: 0px 0px 10px 0px;
+    }
+    
+    .form-content label {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    .form-content small {
+        color: red;
+    }
+    
+    .btn {
+        margin: 0px 100px 300px 100px;
+    }
+</style>

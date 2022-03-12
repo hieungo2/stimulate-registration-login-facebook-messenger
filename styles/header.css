@@ -1,0 +1,115 @@
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    width: 100%;
+    background-color: rgba(255, 226, 192, 1);
+}
+
+.navbar-brand {
+    font-size: 26px;
+    color: blue !important;
+    -webkit-text-stroke: 0.1px black;
+    font-family: 'Indie Flower', cursive;
+}
+
+ul.all-header .nav .navbar-nav li a {
+    display: flex;
+}
+
+ul.navbar-nav li a {
+    Font-weight: 600;
+}
+
+.header-logout {
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+a.navbar-brand.text-right {
+    font-size: 15px;
+    Font-weight: 6;
+    color: black !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px solid indianred;
+    /* background-color: rgb(235, 231, 231); */
+}
+
+.all-header .header-logout:hover a {
+    background-color: red;
+    color: white !important;
+    font-weight: 600;
+    -webkit-text-stroke: 0.1px black;
+    /* border-radius: 15px; */
+}
+
+.all-header div {
+    text-align: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.headers li:hover {
+    background-color: #e7e7e7;
+}
+
+
+/* -------------------------------- */
+
+@media (min-width: 740px) {
+    .hide-icon {
+        display: none !important;
+    }
+}
+
+@media (max-width: 740px) {
+    .navi-mobi {
+        display: none;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        flex: 75%;
+        margin-left: -59px;
+    }
+    .all-header {
+        display: flex;
+        justify-content: space-between;
+        flex: 100%;
+    }
+    .navbar-brand {
+        line-height: 28px;
+    }
+    .posts-left {
+        display: none;
+    }
+    .middle {
+        padding-top: 52px;
+        height: 800px;
+    }
+    .posts-right {
+        display: none;
+    }
+    .btn-logout {
+        background: transparent !important;
+    }
+}
+
+.MyClass {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.navbar-brand {
+    margin-left: 0px !important;
+}

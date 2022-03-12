@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "name": "Bảo Vy",
+        "avatar": "/images/anh-gai-xinh-trung-hoc-co-so.jpg",
+        "message": [
+            {
+                "id": 1, 
+                "content": "Em cho anh làm quen với",
+                "user_id": 5
+            },
+            {
+                "id": 2, 
+                "content": "??? :>>",
+                "user_id": 1
+            },
+            {
+                "id": 100, 
+                "content": "Được hông =))",
+                "user_id": 6
+            }
+          
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Cát Tường",
+        "avatar": "/images/girl 3.jpg",
+        "message": [
+            {
+                "id": 1, 
+                "content": "Yêu em",
+                "user_id": 1
+            },
+            {
+                "id": 2, 
+                "content": "Được hông?",
+                "user_id": 6
+            }
+          
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Cát",
+        "avatar": "/images/girl 3.jpg",
+        "message": [
+            {
+                "id": 1, 
+                "content": "I love you",
+                "user_id": 1
+            },
+            {
+                "id": 2, 
+                "content": "Ok?",
+                "user_id": 6
+            }
+          
+        ]
+    }
+
+
+]

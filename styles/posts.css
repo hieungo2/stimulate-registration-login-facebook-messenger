@@ -1,0 +1,364 @@
+.custom-row {
+    padding: 0;
+    margin: 0;
+}
+
+.posts-left {
+    height: auto
+    /* background: rgba(129, 43, 0, 0.3); */
+}
+
+.middle {
+    padding-top: 12px;
+    height: 100%;
+    /*real is 800px*/
+    background: rgba(129, 43, 106, 0.1);
+    /* height: 800px;
+    background: yellow; */
+}
+
+.posts-right {
+    height: auto;
+    /* background: rgba(129, 43, 0, 0.3); */
+}
+
+#post-content {
+    resize: none;
+}
+
+.middle .border-posts {
+    width: 100%;
+    height: 300px;
+    border: 3px solid rgb(191, 15, 226);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.border-posts input[type="text"],
+.border-posts textarea[placeholder="Nhap noi dung"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(195, 105, 236);
+    outline: none;
+}
+
+.border-posts input[type="text"]:focus,
+.border-posts textarea[placeholder="Nhap noi dung"]:focus {
+    border: 2px solid purple;
+}
+
+
+/*.btn-primary {
+    background-color: rgb(165, 0, 210);
+    border: rgb(165, 0, 210);
+}
+*/
+
+#post-result {
+    width: 100%;
+    height: 700px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.sender,
+.comment,
+#post-result .posts-body .image-posts img {
+    width: 100%;
+}
+
+
+/*sender*/
+
+#post-result .sender-avt img {
+    margin-bottom: 20px;
+}
+
+#post-result .infor-sender {
+    display: inline-block;
+    height: 60px;
+}
+
+#post-result .sender-name {
+    color: black;
+    font-weight: 600;
+    margin: 5px;
+}
+
+#post-result .sender-time:hover,
+#post-result .sender-name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#post-result .sender-time {
+    opacity: 0.7;
+    margin: 5px 5px;
+}
+
+.sender .sender-name {
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sender .infor-sender,
+.sender .more-choose {
+    display: inline-block;
+}
+
+
+/*3 dots*/
+
+.sender .more-choose {
+    position: relative;
+    float: right;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.sender .more-choose:hover {
+    background-color: rgb(194, 192, 192);
+    border-radius: 50%;
+}
+
+.sender .more-choose .body-choose {
+    float: left !important;
+    position: absolute;
+    min-width: 280px;
+    height: 220px;
+    background-color: #fff;
+    border-radius: 4px;
+    right: 50%;
+    border: .5px solid #969aa0;
+    box-shadow: 3px 3px 3px #888888;
+    display: none;
+}
+
+.sender .more-choose .body-choose li {
+    line-height: 2;
+    margin: 5px 5px 5px 10px;
+    color: #000;
+    opacity: 0.8;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.sender .more-choose:hover .body-choose {
+    display: block;
+}
+
+.more-choose .body-choose .row1,
+.more-choose .body-choose .row2,
+.more-choose .body-choose .row5 {
+    border-bottom: 1px solid #65676B;
+}
+
+.sender .more-choose .body-choose li:hover {
+    background-color: rgb(224, 222, 222);
+}
+
+.posts-body .paragraph-posts1 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/*part 1 like share cmt*/
+
+.interac-top,
+.interac-under {
+    border-bottom: 1px solid gray;
+    height: 40px;
+}
+
+.interac-top .icon-inter,
+.interac-top .count {
+    display: inline-block;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.interac-top .icon-inter .fa-thumbs-up {
+    font-size: 18px;
+    position: relative;
+}
+
+.interac-top .icon-inter .fa-thumbs-up:before {
+    margin-right: 5px;
+}
+
+.interac-top .count p.count-people,
+.interac-top .count p.people-share {
+    display: inline-block;
+    margin-bottom: 0px;
+    opacity: 0.7;
+}
+
+.interac-top .count p.count-people:hover,
+.interac-top .count p.people-share:hover {
+    text-decoration: underline;
+}
+
+.interac-top .count {
+    height: 40px;
+    float: right;
+}
+
+.interac-top .count p.people-share {
+    margin-right: 5px;
+}
+
+.interac-top p.people-share {
+    position: relative;
+}
+
+.interac-top .name-liker,
+.interac-top .name-sharer {
+    position: absolute;
+    list-style-type: none;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 130px;
+    display: none;
+}
+
+.interac-top .name-sharer {
+    left: 70%;
+    display: none;
+}
+
+.interac-top .name-liker li,
+.interac-top .name-sharer li {
+    line-height: 1.5;
+    margin-left: 5px;
+}
+
+.interac-top i:hover .name-liker,
+.count:hover .name-sharer {
+    display: block;
+}
+
+
+/*part 2 like share cmt*/
+
+.interac-under .icon-like .fa-thumbs-up,
+.icon-cmt .ti-comment,
+.icon-share .ti-share {
+    line-height: 40px;
+    float: left;
+    display: inline-block;
+    width: 33.333333%;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.icon-cmt .ti-comment,
+.icon-share .ti-share {
+    opacity: 0.8;
+}
+
+.interac-under .icon-like .fa-thumbs-up {
+    font-size: 20px;
+    color: #6b705c;
+}
+
+.icon-cmt .ti-comment,
+.icon-share .ti-share {
+    font-size: 18px;
+}
+
+.interac-under .icon-like .fa-thumbs-up:before,
+.icon-cmt .ti-comment:before,
+.icon-share .ti-share:before {
+    margin-right: 10px;
+}
+
+.interac-under .icon-like .fa-thumbs-up:hover,
+.icon-cmt .ti-comment:hover,
+.icon-share .ti-share:hover {
+    background-color: #ccc;
+    background-size: 125px 40px;
+}
+
+
+/*----------------------------------------------------*/
+
+.interac-under .icon-like.fa-thumbs-up {
+    position: relative;
+}
+
+.interac-under i:hover .appear-react-hover {
+    display: block;
+}
+
+.appear-react-hover {
+    position: absolute;
+    border: .5px solid #ccc;
+    height: 50px;
+    width: 255px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 8px 1px rgb(0 0 0 / 50%);
+    display: none;
+    opacity: 1;
+}
+
+.appear-react-hover li {
+    float: left;
+    display: flex;
+    width: 40px;
+    height: 35px;
+    cursor: pointer;
+    transition: transform 200ms ease;
+}
+
+.appear-react-hover li:hover {
+    transform: scale(1, 1) translate(0, -6px);
+    opacity: 1;
+}
+
+
+/*cmt*/
+
+.comment {
+    margin-top: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.border-cmt input[type="text"] {
+    border-radius: 4px;
+    border: .5px solid #969aa0;
+}
+
+.comment .people-cmt-avt,
+.comment .border-cmt {
+    display: inline-block;
+}
+
+.comment .border-cmt {
+    margin-top: 10px;
+    float: right;
+    line-height: 30px;
+    width: 100%;
+}
+
+.post-user {
+    border: 1px solid;
+    margin: 3% 0;
+    padding: 3%;
+    border-radius: 30px;
+}

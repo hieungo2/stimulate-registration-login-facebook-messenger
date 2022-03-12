@@ -1,0 +1,145 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="formm" id="form">
+                <div class="hear">
+                    <h2>Đăng kí
+                        <i class="fas fa-times close" id="close"></i>
+                    </h2>
+                    <p>Nhanh chóng và dễ dàng</p>
+                </div>
+                <form action="">
+                    <div class="margin">
+                        <input type="text" placeholder="Họ" class="border ho" id="surname-input" required>
+                        <input type="text" placeholder="Tên" class="border ten" id="name-input">
+                        <input type="email" placeholder="email" class="border sdt" id="phone-input">
+                        <p class="color-warning" id="phone-error"></p>
+                        <input type="password" placeholder="Mật khẩu mới" class="border sdt" id="newpass-input">
+                        <p class="color-warning" id="newpass-error"></p>
+                        <div class="date-time">
+                            <span>Ngày sinh <i class="fas fa-question-circle"></i></span>
+                            <div class="aaaaa">
+                                <select aria-label="Ngày" id="day" name="birthday_day" id="day" title="Ngày"></select>
+                                <select aria-label="Tháng" id="month" name="birthday_month" id="month" title="Tháng"></select>
+                                <select aria-label="Năm" id="year" name="birthday_year" id="year" title="Năm"></select>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Genders <i class="fas fa-question-circle"></i></span>
+                            <div class="aaaaa">
+                                <span class="border xiaxia tach pr10-gender">
+                                    <label for="fe" class="pr50-gender">Female</label>
+                                    <input type="radio" name="gender" id="fe" class="">
+                                </span>
+                                <span class="border xiaxia tach pr10-gender">
+                                    <label for="ma" class="pr50-gender">Male</label>
+                                    <input type="radio" name="gender" id="ma">
+                                </span>
+                                <span class="border xiaxia tach pr10-gender">
+                                    <label for="cu" class=" pr50-gender">Custom</label>
+                                    <input type="radio" name="gender" id="cu">
+                                </span>
+                            </div>
+                            <p style="font-size:11px">By clicking Sign Up, you agree to our <a href="">Terms</a>,<a href=""> Data Policy</a> and <a href="">Cookie Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+                        </div>
+                        <button class="btn btn-success btn-ss" onclick="signUp()">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 left">
+        <div class="column">
+            <div class="logo"><img class="fb_logo" src="../images/facebook.svg" alt="Facebook"></div>
+            <div class="title">Đăng nhập gần đây</div>
+            <div class="sub-title">Nhấp vào ảnh của bạn hoặc thêm tài khoản.</div>
+            <div class="flex-card">
+                <div class="card-outside">
+                    <div>
+                        <a href="#" title="Minh Nguyên" class="card" role="button"><img class="image" src="../images/avata.jpg"
+                                alt="" aria-label="Minh Nguyên" role="img">
+                            <div class="card_label">Minh</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-outside">
+                    <div>
+                        <a href="#" title="Minh Nguyên" class="card" role="button"><img class="image" src="../images/avata.jpg"
+                                alt="" aria-label="Minh Nguyên" role="img">
+                            <div class="card_label">Minh</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-outside1">
+                    <div class="card-outside2">
+                        <div>
+                            <a href="#" title="Minh Nguyên" class="card" role="button"><img class="image" src="../images/avata.jpg"
+                                    alt="" aria-label="Minh Nguyên" role="img">
+                                <div class="card_label">Minh</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-outside1">
+                    <div class="card-outside2">
+                        <a href="#" title="Add card" class="card" role="button">
+                            <div class="image"><img class="add_image" src="../images/add.png" alt="" aria-label="Minh Nguyên" role="img"></div>
+                            <div class="card_label">Thêm tài khoản</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 right">
+    <!-- Toàn bộ khung nội dung right -->
+        <div class="action">
+        <div class="action-top">
+            <!-- error login -->
+            <div id="error-login" class="color-warning text-center"></div>
+            <div class="text-center process-loading">
+                <div class="text-center" id="login-register"></div>
+            </div>
+            <!-- tài khoản & mật khẩu  -->
+            <div class="email-pass-container">
+            <!-- tài khoản -->
+            <div class="email-container">
+                <input type="text" class="email-input" placeholder="Email hoặc số điện thoại" required>
+                <p class="color-warning" id="email-error"></p>
+            </div>
+            <!-- pass -->
+            <div class="pass-container">
+                <input type="password" class="pass-input" placeholder="Mật khẩu" id="ipnPassword">
+                <div class="icon-eye" id="btnPassword" type='button' >
+                <i class="fa fa-eye" aria-hidden="true" ></i>
+                </div>
+                <p class="color-warning" id="pass-error"></p>
+            </div>
+            </div>
+            <!-- nút đăng nhập -->
+            <div class="login-container">
+            <button class="login-button" onclick="errorr()">Đăng nhập</button>
+            </div>
+            <!-- quên mật khẩu -->
+            <div class="miss-pass-container">
+            <a href="#" class="miss-pass">Quên mật khẩu?</a>
+            </div>
+                <!-- Thẻ hr -->
+                <div class="hr-mid">
+                    <hr class="hr-mid-missandcreat">
+                </div>
+                <!-- tạo tài khoản mới -->
+                <div class="creater-acc-container">
+                    <a href="#" id="btn-create" class="creater-acc">Tạo tài khoản mới</a>
+                </div>
+            </div>
+            <!-- doanh nghiệp -->
+            <div class="action-bottom">
+                <p class="company-page">
+                    <span class="link-to-company-page"><a href="#" class="new-company-page">Tạo trang</a> dành cho người nổi tiếng, nhãn hiệu hoặc doanh nghiệp.</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="javascripts/index.js"></script>
