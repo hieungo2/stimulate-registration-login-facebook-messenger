@@ -42,6 +42,24 @@
     },
     {
         "id": 3,
+        "name": "Cát vy",
+        "avatar": "/images/girl 8.jpg",
+        "message": [
+            {
+                "id": 1, 
+                "content": "Yêu em",
+                "user_id": 1
+            },
+            {
+                "id": 2, 
+                "content": "Được hông?",
+                "user_id": 6
+            }
+          
+        ]
+    },
+    {
+        "id": 4,
         "name": "Cát",
         "avatar": "/images/girl 3.jpg",
         "message": [
